@@ -41,6 +41,7 @@ li {
 }
 a {
     text-decoration: none;
+    color: #000;
 }
 .topnavi a {
     text-decoration: none;
@@ -149,7 +150,7 @@ a {
 
 .middlenavibox:hover {
     background-color: #1E286F;
-    }
+}
 .middlenavibox:hover li {
     color: #fff;
 }
@@ -192,10 +193,17 @@ a {
 .menu ul {
     width: 1300px;
     margin: 0 auto;
-    padding: 5px 120px;
     box-sizing: border-box;
     display: flex;
 }
+
+.menu .up {
+    padding: 10px 120px 0;
+}
+.menu .down {
+    padding: 5px 120px 10px;
+}
+
 .menu li  {
     color: #fff;
     text-decoration: none;
@@ -413,7 +421,7 @@ a {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.mainpage .arrow{
+.mainpage .arrow {
     position: relative;
     display: inline-block;
     vertical-align: top;
@@ -483,8 +491,22 @@ a {
 .mainbody .lump:nth-child(6), 
 .mainbody .lump:nth-child(8), 
 .mainbody .lump:nth-child(10), 
-.mainbody .lump:nth-child(11) {
+.mainbody .lump:nth-child(11), 
+.mainbody .lump:nth-child(13) {
     background-color: #F7F7F7;
+}
+.mainbody .lump:first-child,
+.mainbody .lump:nth-child(6) {
+    border-top: 1px solid #E2E2E2;
+    border-bottom: 1px solid #E2E2E2;
+}
+.mainbody .lump:nth-child(7),
+.mainbody .lump:nth-child(8),
+.mainbody .lump:nth-child(9),
+.mainbody .lump:nth-child(11),
+.mainbody .lump:nth-child(12),
+.mainbody .lump:nth-child(13) {
+    border-bottom: 1px solid #E2E2E2;
 }
 
 .lumpA-a::after,
@@ -526,6 +548,7 @@ a {
     margin-bottom: 50px;
     letter-spacing: 2px;
 }
+
 .basic {
     background-color: #000000;
     color: #fff;
@@ -584,7 +607,8 @@ a {
 .lumpA-b a {
     color: #000000;
 }
-.mainpage .mainbody .arrow::before {
+.mainpage .mainbody .left .arrow::before,
+.mainpage .mainbody .right .arrow::before {
     position: absolute;
     top: 10px;
     bottom: 0;
@@ -610,8 +634,346 @@ a {
 .left:hover {
     opacity: 0.7;
 }
+/*４ブロ*/
+.lumpA ul {
+    margin: 0px auto;
+    width: 1100px;
+    padding: 80px 0;
+    text-align: center;
+}
+.lump .block a {
+    background: url("../images/bg_diagonal01_black01.png");
+    width: 500px;
+    margin: 20px;
+}
+.lump li {
+    display: inline-block;
+    width: 450px;
+    vertical-align: top;
+    background-color: #fff;
+    text-align: left;
+    margin: 5px;
+}
+.lump li h1 {
+    font-size: 26px;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+    width: 410px;
+    line-height: 1.7;
+}
+.lump li p {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    width: 430px;
+    line-height: 1.7;
+}
+.lista {
+    padding: 30px 10px 34px 25px;
+}
+.listc {
+    padding: 20px 10px 23px 25px;
+}
+.listb,
+.listd {
+    padding: 10px 10px 10px 25px;
+    padding: 10px 10px 10px 25px;
+}
 
+.mainpage .mainbody .block .arrow::before {
+    position: absolute;
+    top: 0;
+    left: 470px;
+    margin: auto;
+    content: "";
+}
+.block li:hover {
+    opacity: 0.6;
+}
 
+/*youtube*/
+.video {
+    text-align: left;
+    padding: 80px 0;
+}
+.video p {
+    margin: 0;
+    padding: 0;
+    width: 380px;
+    text-align: center;
+    font-size: 14px;
+}
 
+/*info*/
+.info {
+    width: 100%;
+    background-image: url("../images/footer02_bg01.png");
+}
+.more {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.morelink {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.more p {
+    color: #fff;
+    font-size: 20px;
+    padding: 30px 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    letter-spacing: 2px;
+}
+.morelink li {
+    color: #fff;
+    font-size: 18px;
+}
+.morelink p {
+    font-size: 12px;
+    margin: 0 0 18px 0;
+}
+.morelinkA,
+.morelinkB {
+    width: 290px;
+    display: inline-block;
+}
+.morelinkA {
+    padding: 0;
+}
+.morelinkB {
+    padding: 0;
+    vertical-align: bottom;
+}
 
+.morelinkA .link-a {
+    background-color: #fff;
+    color: #000;
+    margin: 15px 15px 0 ;
+    padding: 15px 70px 15px 20px;
+}
+.morelinkA .link-b {
+    background-color: #fff;
+    color: #000;
+    margin: 15px 15px 0 ;
+    padding: 15px 70px 15px 15px;
+}
 
+.morelinkA img {
+    padding-right: 8px;
+    vertical-align: bottom;
+}
+.morelinkB .web {
+    font-size: 14px;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    width: 160px;
+    margin: 0 auto;
+}
+.link-a:hover,
+.link-b:hover {
+    opacity: 0.7;
+}
+.web:hover {
+    text-decoration: underline;
+}
+.footer .morelinkA .arrow::after {
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.footer .morelinkA .arrow::after {
+    position: absolute;
+    top: 13px;
+    bottom: 0;
+    left: 240px;
+    margin: auto;
+    content: "";
+}
+
+.footer .arrow::after {
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.footer .arrow {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    text-decoration: none;
+}
+.footer .arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 185px;
+    margin: auto;
+    content: "";
+}
+/*N中等部*/
+.another {
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+.another p {
+    padding: 50px 0 10px;
+    margin-bottom: 0;
+}
+.another .block {
+    padding: 0 0 40px 0;
+}
+.another .lista,
+.another .listb {
+    padding: 10px;
+    text-align: center;
+}
+.another .lista {
+    padding: 15px 10px;
+}
+.another .block a {
+    width: 480px;
+}
+.footer .block .arrow::before {
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-top: 2px solid #000000;
+    border-right: 2px solid #000000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.footer .block .arrow::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 450px;
+    margin: auto;
+    content: "";
+}
+
+/*フッターの大部分の頭*/
+.footermain {
+    width: 100%;
+    background-color: #F7F7F7;
+}
+.footertop,
+.footerbody {
+    width: 1100px;
+    margin: 0 auto;
+}
+.footertop::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.footertop ul {
+    display: flex;
+    padding: 40px 0;
+    width: 900px;
+    box-sizing: border-box;
+    float: left;
+}
+.footertop li a {
+    border-right: 1px solid #000000;
+    border-color: #979CBB;
+    padding: 0 10px;
+    color: #030065;
+    font-weight: 600;
+}
+.footertop li:last-child a {
+    border-right: none;
+}
+.footermain  a:hover {
+    text-decoration: underline;
+}
+            
+.footermain span a:hover {
+    text-decoration: underline;
+    text-decoration-color: #030065;
+}
+.footertop img {
+    float: right;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.footertop img:hover {
+    opacity: 0.7;
+}
+/*大部分メイン*/
+.footerbody {
+    border-bottom: 1px solid #C9C9C9;
+    padding-bottom: 50px;
+}
+.footerbody ul {
+    width: 200px;
+    padding: 0 15px 0 0;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+}
+.footerbody .while {
+    border-top: 1px solid #C9C9C9;
+    padding-top: 20px;
+    margin-top: 20px;
+}
+.footerbody li {
+    margin: 0 0 5px 0;
+    font-size: 14px;
+}
+.footerbody span {
+    font-size: 12px;
+    color: #030065;
+}
+.footerbody .head {
+    color: #030065;
+    font-size: 16px;
+    font-weight: bold;
+}
+.footerbody .headput {
+    margin-top: 22px;
+}
+.headput span {
+    font-size: 12px;
+}
+/*フッターの下部分*/
+.footerbottom {
+    width: 1100px;
+    margin: 0 auto;
+    
+}
+.footerbottom ul {
+    display: flex;
+    padding: 0;
+    margin-top: 30px;
+}
+.footerbottom a {
+    padding: 0 10px 0 0;
+    font-size: 14px;
+}
+.sns .snslist a {
+    width: 100px;
+    padding: 25px 10px 5px 10px ;
+}
+.sns p {
+    font-size: 10px;
+    display: inline-block;
+    width: 80px;
+    vertical-align: 2px;
+}
+.snslist a:hover {
+    background-color: red;
+    text-decoration: none;
+}
