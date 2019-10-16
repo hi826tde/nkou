@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: sans-serif;
 }
 .wrap {
     overflow: hidden;
@@ -969,6 +970,9 @@ a {
 .footertop li:last-child a {
     border-right: none;
 }
+.footertop li:first-child a {
+    padding-left: 0;
+}
 .footermain  a:hover {
     text-decoration: underline;
 }
@@ -979,7 +983,7 @@ a {
 }
 .footertop img {
     float: right;
-    margin-right: 60px;
+    margin-right: 80px;
     margin-top: 30px;
 }
 .footertop img:hover {
@@ -1003,7 +1007,7 @@ a {
     margin-top: 20px;
 }
 .footerbody li {
-    margin: 0 0 5px 0;
+    margin: 0 0 12px 0;
     font-size: 14px;
 }
 .footerbody .headspan {
