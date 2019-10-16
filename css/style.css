@@ -360,11 +360,13 @@ a {
     text-align: center;
     letter-spacing: 8px;
     margin: 80px 0;
+    line-height: 2;
 }
 .toptextB {
     font-size: 22px;
     text-align: center;
     position: relative;
+    line-height: 2;
 }
 .toptextB:before {
     content: '';
@@ -432,8 +434,8 @@ a {
     padding: 10px 0;
 }
 .sentencepolicy li {
-    padding: 15px 0;
-    margin: 15px 0;
+    padding: 14px 0;
+    margin: 15px 0 14px 0;
     display: inline-block;
     font-size: 18px;
 }
@@ -481,6 +483,7 @@ a {
     width: 440px;
     letter-spacing: 1px;
     margin: 0 0 30px 0;
+    line-height: 1.7;
 }
 .mainpage img {
     padding: 10px 20px;
@@ -542,11 +545,13 @@ a {
     display: inline-block;
     letter-spacing: 1px;
     padding-top: 0;
+    line-height: 1.7;
 }
 .supplement {
     font-size: 12px;
     width: 500px;
     display: inline-block;
+    line-height: 1.7;
 }
 .charm img {
     width: 450px;
@@ -621,6 +626,7 @@ a {
 .lumpAtext {
     margin-bottom: 50px;
     letter-spacing: 2px;
+    line-height: 2;
 }
 
 .basic {
@@ -830,13 +836,13 @@ a {
     background-color: #fff;
     color: #000;
     margin: 15px 15px 0 ;
-    padding: 15px 70px 15px 20px;
+    padding: 12px 70px 18px 20px;
 }
 .morelinkA .link-b {
     background-color: #fff;
     color: #000;
     margin: 15px 15px 0 ;
-    padding: 15px 70px 15px 15px;
+    padding: 10px 70px 18px 15px;
 }
 
 .morelinkA img {
