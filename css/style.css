@@ -1047,6 +1047,9 @@ a {
     margin: 0px;
     border-right: #DDDDDD solid 1px;
 }
+.snslist {
+    padding: 0;
+}
 .snslist li:last-child {
     border-right: none;
 }
@@ -1058,18 +1061,24 @@ a {
     display: inline-block;
 }
 .sns .snslist a {
-    padding: 0 15px;
+    padding: 0 10px;
     box-sizing: border-box;
 }
 
 .sns .snslist {
     margin: 20px 0 0 0;
 }
+.snslist img {
+    padding-top: 10px;
+}
 .sns p {
-    font-size: 10px;
+    font-size: 12px;
     display: inline-block;
-    width: 80px;
+    width: 110px;
     vertical-align: 2px;
+}
+.sns .snslast p {
+    width: 140px;
 }
 .snslist a:hover {
     background-color: #eeeeee;
@@ -1097,7 +1106,26 @@ a {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 130px;
+    left: 150px;
+    margin: auto;
+    content: "";
+}
+
+.footer .footerbottom .snslast .arrow::before {
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.footer .footerbottom .snslast .arrow::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 180px;
     margin: auto;
     content: "";
 }
