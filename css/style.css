@@ -1,6 +1,9 @@
 body {
     margin: 0;
 }
+.wrap {
+    overflow: hidden;
+}
 #headerbg {
     width: 100%;
 }
@@ -71,10 +74,18 @@ a {
 
 /*学校名から*/
 
-.toptittle,
+.toptittle {
+    width: 1200px;
+    margin: 16px auto;
+    box-sizing: border-box;
+    padding: 0 40px;
+}
+.toptittle ul {
+    padding-top: 5px;
+}
 .middlenavi {
     width: 1200px;
-    margin: 20px auto;
+    margin: 20px auto 10px;
     box-sizing: border-box;
     padding: 0 40px;
 }
@@ -86,15 +97,16 @@ a {
 }
 .toptittle .phonenumber {
     width: 220px;
-    margin: 0 30px;
+    margin: 0 25px 0 30px;
     vertical-align: top;
 }
 .phonenumber img {
     height: 28px;
 }
-.phonenumber span {
+.phonenumber p {
     font-size: 12px;
     color: #8C959C;
+    margin: 0;
     padding-left: 30px;
 }
 
@@ -109,40 +121,50 @@ a {
 
 .middlenavi li {
     padding: 0 5px;
-    vertical-align: top;
+    vertical-align: -10px;
+}
+.middlenavi .firstnavi  {
+    border-right: 1px solid #DCDDDD;
+    border-left: 1px solid #DCDDDD;
 }
 .middlenavi li {
     width: 140px;
-    border-left: solid 1px #DCDDDD;
     text-align: center;
     font-size: 16px;
     line-height: 0.9;
     letter-spacing: 1.5px;
 }
-
-.middlenavi span {
-    font-size: 12px;
-    color: #8C959C;
-    letter-spacing: 0;
+.secondnavi {
+    border-right: solid 1px #DCDDDD;
+}
+.firstnavi span {
+    font-size: 10px;
+    color: #1E286F;
+    margin: 0;
 }
 
 .middlenavi a {
     text-decoration: none;
     color: #272727;
 }
-.middlenavi a:hover,
-.middlenavi span:hover {
+.secondnavi p {
+    font-size: 10px;
+    color: #8C959C;
+    margin: 5px 0;
+    padding: 0;
+}
+
+.linkhover:hover {
     color: #1E286F;
 }
+
 
 /*説明会、、資料請求のbox*/
 .middlenavibox  {
     border: #1E286F solid 1px;
-    font-weight: bold;
-    margin-left: 10px;
 }
 .navibox {
-    margin-left: 40px;
+    margin-left: 54px;
 }
 .middlenavibox li {
     color: #1E286F;
@@ -156,11 +178,11 @@ a {
 }
 .middlenavibox li {
     border-left: none;
-    padding: 10px 15px;
+    padding: 12px 15px;
 }
 .middlenavibox::before {
-    width: 6px;
-    height: 6px;
+    width: 3px;
+    height: 3px;
     border-top: 2px solid #1E286F;
     border-right: 2px solid #1E286F;
     -webkit-transform: rotate(45deg);
@@ -179,7 +201,7 @@ a {
     position: absolute;
     top: 1px;
     bottom: 0;
-    left: 150px;
+    left: 155px;
     margin: auto;
     content: "";
     vertical-align: middle;
@@ -191,25 +213,46 @@ a {
     background-color: #171736;
 }
 .menu ul {
-    width: 1300px;
+    width: 1200px;
     margin: 0 auto;
-    box-sizing: border-box;
-    display: flex;
+    
+    display: inline-block;
 }
 
 .menu .up {
-    padding: 10px 120px 0;
+    padding: 8px 0 0 220px;
+    width: 1200px;
+
 }
 .menu .down {
-    padding: 5px 120px 10px;
+    padding: 5px 0 8px 220px;
+    width: 1100px;
+    
+}
+.triangle {
+    position: relative;
+    display: inline-block;
+    background-color: #171736;
+    width: 100%;
+    margin: 0 auto;
+}
+.triangle:before {
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 1;
+    border-style: solid;
+    border-color: #171736 transparent;
+    border-width: 0 10px 20px 10px;
+    top: -10px;
+    left: 270px;
+    margin-left: -10px;
 }
 
 .menu li  {
     color: #fff;
     text-decoration: none;
-    padding: 5px;
-    margin: 0 20px 0 20px;
-    transform: skewX(150deg);
+    padding: 5px 5px;
 }
 .menu li:hover {
     background-color: #fff;
@@ -217,17 +260,16 @@ a {
 }
 .menu a {
     font-size: 14px;
-    border-right: #8C959C 1px solid;
-    transform: skewX(-150deg);
-    -webkit-transform: skewX(-150deg);
-    -moz-transform: skewX(-150deg);
+    letter-spacing: 2px;
 }
-.menu a:last-child {
-    border-right: none;
+.menu img {
+    width: 12px;
+    height: 18px;
+    padding-top: 10px;
+    vertical-align: -5px;
 }
-.menuB a:first-child{
-    border-left: #8C959C 1px solid;
-}
+
+/*学校写真〜*/
 .schoolimage {
     position: relative;
 }
@@ -261,6 +303,9 @@ a {
     padding: 20px 180px;
     margin: 0;
 }
+.bottomnavi p {
+    letter-spacing: 2px;
+}
 .bottomnavi li {
     width: 500px;
     font-size: 14px;
@@ -272,7 +317,34 @@ a {
 .bottomnavi a:hover {
     text-decoration: underline;
 }
-
+.bottomnavi p {
+    display: inline-block;
+    margin: 0;
+    padding-left: 20px;
+}
+.bottomnavi .arrow::after {
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #000000;
+    border-right: 1px solid #000000;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.bottomnavi .arrow {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-decoration: none;
+}
+.bottomnavi .arrow::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 270px;
+    margin: auto;
+    content: "";
+}
 /*ページメイン*/
 .maintop {
     width: 1300px;
@@ -799,7 +871,7 @@ a {
     content: "";
 }
 
-.footer .arrow::after {
+.footer .morelinkB .arrow::after {
     left: 3px;
     width: 5px;
     height: 5px;
@@ -814,7 +886,7 @@ a {
     vertical-align: middle;
     text-decoration: none;
 }
-.footer .arrow::after {
+.footer .morelinkB .arrow::after {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -822,6 +894,7 @@ a {
     margin: auto;
     content: "";
 }
+
 /*N中等部*/
 .another {
     width: 1100px;
@@ -933,7 +1006,7 @@ a {
     margin: 0 0 5px 0;
     font-size: 14px;
 }
-.footerbody span {
+.footerbody .headspan {
     font-size: 12px;
     color: #030065;
 }
@@ -952,20 +1025,41 @@ a {
 .footerbottom {
     width: 1100px;
     margin: 0 auto;
-    
+    padding-bottom: 30px;
 }
-.footerbottom ul {
-    display: flex;
+.footerbottom::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+.overview  li {
+    display: inline-block;
     padding: 0;
-    margin-top: 30px;
+    margin: 0px;
+}
+.snslist li {
+    display: inline-block;
+    padding: 0;
+    margin: 0px;
+    border-right: #DDDDDD solid 1px;
+}
+.snslist li:last-child {
+    border-right: none;
 }
 .footerbottom a {
     padding: 0 10px 0 0;
     font-size: 14px;
 }
+.sns {
+    display: inline-block;
+}
 .sns .snslist a {
-    width: 100px;
-    padding: 25px 10px 5px 10px ;
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.sns .snslist {
+    margin: 20px 0 0 0;
 }
 .sns p {
     font-size: 10px;
@@ -974,6 +1068,65 @@ a {
     vertical-align: 2px;
 }
 .snslist a:hover {
-    background-color: red;
+    background-color: #eeeeee;
     text-decoration: none;
+}
+.overview {
+    float: left;
+    margin-top: 30px;
+    padding: 0;
+}
+.sns {
+    float: right;
+}
+.footer .footerbottom .arrow::before {
+    left: 3px;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid #DDDDDD;
+    border-right: 1px solid #DDDDDD;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.footer .footerbottom .arrow::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 130px;
+    margin: auto;
+    content: "";
+}
+
+/*細目*/
+.sitefoot {
+    width: 100%;
+    margin: 0 auto 20px;
+    background-color: #000;
+}
+.detail::after {
+    display: block;
+    clear: both;
+    content: "";
+}
+.detail {
+    width: 1100px;
+    margin: 0 auto;
+}
+.detail p {
+    width: 200px;
+    padding: 20px 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+    float: left;
+}
+.detail a {
+    font-size: 12px;
+    color: #757575;
+}
+.detail .last {
+    width: 400px;
+    color: #757575;
+    float: right;
+    text-align: right;
 }
